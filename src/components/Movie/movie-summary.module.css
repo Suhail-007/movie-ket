@@ -22,6 +22,7 @@
 .movie__info>h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .movie__info>p {
@@ -39,4 +40,18 @@
 .details {
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 64em) {
+  .movie__summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .movie__info {
+    justify-self: start;
+  }
+
+  .img__cont {
+    justify-self: center;
+  }
 }
