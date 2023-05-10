@@ -1,0 +1,93 @@
+.book__movie {
+  width: 90%;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  margin-block: 5rem;
+  border-radius: 4px;
+  border: .9px solid #ddd;
+  box-shadow: .4rem .4rem .5rem rgba(200, 200, 200, .5),
+    -.1rem -.1rem .3rem rgba(200, 200, 200, .5);
+}
+
+.book__movie>h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.book__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+}
+
+.book__form>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.book__form>div>label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.book__form>button {
+  margin-top: 3rem;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.book__form>button>svg {
+  transition: 250ms ease-in-out;
+}
+
+.book__form>button:is(:hover, :focus) svg {
+  transform: translateX(.5rem);
+}
+
+.movie__summary {
+  align-self: start;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: .5px solid #ddd;
+  border-radius: .5px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.img__cont {
+  width: 50%;
+}
+
+.img__cont>img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.movie__info>h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.movie__info>p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.summary {
+  text-align: justify;
+  letter-spacing: 1px;
+}

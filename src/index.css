@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Karla:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 
 :root {
   --primary-color: hsla(208, 92%, 66%, 1);
@@ -28,7 +28,7 @@ button {
 
 input,
 button {
-  font-family: inherit;
+  font-family: inherit !important;
 }
 
 a {
@@ -39,6 +39,5 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  margin-top: 8rem;
+  margin-top: 3rem;
 }

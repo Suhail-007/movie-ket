@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import RootElement from './pages/RootElement';
 import Homepage, { loader as moviesLoader } from './pages/Homepage';
-import BookForm from './pages/BookForm';
+import BookForm, { loader as bookLoader } from './pages/BookForm';
 import ErrorElement from './pages/ErrorPage';
 
 const routes = createBrowserRouter([
@@ -13,13 +13,14 @@ const routes = createBrowserRouter([
 
     children: [
       {
-        loader: moviesLoader,
         element: <Homepage />,
         index: true,
+        loader: moviesLoader,
       },
       {
         path: '/book-ticket/:movieId',
         element: <BookForm />,
+        loader: bookLoader,
       }
 
     ]

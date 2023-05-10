@@ -8,7 +8,6 @@ const RootElement = function() {
     <>
       <Header />
       <main className='main' >
-        <input type='search' autoFocus/>
         <Outlet />
       </main>
     </>

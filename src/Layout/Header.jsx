@@ -4,7 +4,7 @@ import styles from './header.module.css';
 const Header = function() {
   return (
     <header className={styles.header}>
-      <h1>Movie-ket</h1>
+      <h1>Movie-<span>ket</span></h1>
         <div className={styles.menu__icon}> 
           <BsFillMenuAppFill />
         </div>

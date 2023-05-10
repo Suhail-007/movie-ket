@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { v4 as uuid4 } from 'uuid';
+
 import { BsTicketPerforated } from 'react-icons/bs';
 
 import styles from './movie-card.module.css';
@@ -11,8 +13,8 @@ const MovieCard = function({ name, status, runtime, language, genres, summary, p
   // }
 
   const formattedGenre = genres.map((genre, i) => {
-    if (i === genres.length - 1) return <span> {genre}</span>
-    return <span> {genre},</span>
+    if (i === genres.length - 1) return <span key={uuid4()}> {genre}</span>
+    return <span key={uuid4()}> {genre},</span>
   })
 
   return (

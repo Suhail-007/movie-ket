@@ -1,5 +1,7 @@
 import { Suspense } from 'react';
 import { useLoaderData, json, defer, Await } from 'react-router-dom';
+import { BiSearchAlt } from 'react-icons/bi';
+
 import MoviesList from '../components/Movie/MoviesList';
 
 export default function Homepage() {
@@ -7,6 +9,12 @@ export default function Homepage() {
 
   return (
     <>
+    <div>
+      <input type='search' placeholder='Search your favourite movie...' />
+      <button>
+        <BiSearchAlt />
+      </button>
+    </div>
     <Suspense fallback={<p> Loading... </p>}>
       <Await resolve={movies}>
       {loadData => <MoviesList movies={loadData} /> }

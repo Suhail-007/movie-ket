@@ -1,13 +1,13 @@
 import styles from './button.module.css';
 
-export default function Button({ text, children, onClick }) {
+export default function Button({ text, children }) {
 
   return (
-    <button className={styles.cta} onClick={onClick}>
+    <button className={styles.cta}>
+      <span>{text}</span>
       <div>
         {children}
       </div>
-      <span>{text}</span>
     </button>
   )
 }
