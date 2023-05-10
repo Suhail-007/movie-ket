@@ -1,0 +1,42 @@
+.movie__summary {
+  align-self: start;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: .5px solid #ddd;
+  border-radius: .5px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.img__cont {
+  width: 50%;
+}
+
+.img__cont>img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.movie__info>h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.movie__info>p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.summary {
+  text-align: justify;
+  letter-spacing: 1px;
+  padding-inline: 1rem;
+  display: inline-block;
+}
+
+.details {
+  font-weight: 700;
+  letter-spacing: 1px;
+}

@@ -8,8 +8,7 @@
 }
 
 .card:is(:hover, :focus) {
-  transform: translateY(-3px);
-  scale: 1.05;
+  transform: translateY(-5px);
   box-shadow: .2rem .2rem .5rem 0 rgba(200, 200, 200, 1);
 }
 
