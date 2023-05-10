@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+:root {
+  --primary-color: hsla(208, 92%, 66%, 1);
+  --primary-color-dark: hsla(208, 80%, 55%, 1);
+  --primary-font-color: hsla(208, 100%, 96%, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* 1REM === 10PX */
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 8rem;
+}

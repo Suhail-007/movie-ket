@@ -1,0 +1,22 @@
+.header {
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 .4rem 1rem rgba(200, 200, 200, .5);
+  color: hsla(208, 92%, 66%, 1);
+}
+
+.header > h1 {
+  display: flex;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.menu__icon> svg {
+  fill: currentColor;
+  font-size: 2.5rem;
+}
