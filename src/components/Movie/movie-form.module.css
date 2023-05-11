@@ -50,12 +50,11 @@
 .btns>button {
   margin-top: 3rem;
   width: fit-content;
-}
-
-.btns>button>svg {
+  text-align: center;
   transition: 250ms ease-in-out;
 }
 
-.book__form>button:is(:hover, :focus) svg {
-  transform: translateX(.5rem);
+.btns button:is(:hover, :focus, :active) {
+  background: var(--primary-color-dark);
+  color: var(--primary-font-color);
 }

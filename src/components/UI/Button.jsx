@@ -4,10 +4,10 @@ export default function Button({ text, children, onClick, type}) {
 
   return (
     <button type={type} onClick={onClick} className={styles.cta}>
-      <span>{text}</span>
-      <div>
+      {text && <span>{text}</span>}
+      {children && <div>
         {children}
-      </div>
+      </div> }
     </button>
   )
 }

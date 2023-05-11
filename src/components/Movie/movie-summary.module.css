@@ -3,15 +3,17 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
   border: .5px solid #ddd;
   border-radius: .5px;
-  padding: 1rem;
+  padding: 1.3rem;
   width: 100%;
 }
 
 .img__cont {
   width: 50%;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .img__cont>img {
@@ -23,6 +25,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
+  padding-inline: 1.5rem;
 }
 
 .movie__info>p {
@@ -33,13 +36,14 @@
 .summary {
   text-align: justify;
   letter-spacing: 1px;
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
   display: inline-block;
 }
 
 .details {
   font-weight: 700;
   letter-spacing: 1px;
+  padding-inline: 1.5rem;
 }
 
 @media screen and (min-width: 64em) {

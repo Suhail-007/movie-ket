@@ -3,17 +3,19 @@ import { useLoaderData, json, defer, Await } from 'react-router-dom';
 import { BiSearchAlt } from 'react-icons/bi';
 
 import MoviesList from '../components/Movie/MoviesList';
+import Input from '../components/UI/Input';
+import Button from '../components/UI/Button';
 
 export default function Homepage() {
   const { movies } = useLoaderData();
 
   return (
     <>
-    <div>
-      <input type='search' placeholder='Search your favourite movie...' />
-      <button>
+    <div className='input'>
+      <Input placeholderText='Search your favourite movie...' type='search' />
+      <Button type='button'>
         <BiSearchAlt />
-      </button>
+      </Button>
     </div>
     <Suspense fallback={<p> Loading... </p>}>
       <Await resolve={movies}>

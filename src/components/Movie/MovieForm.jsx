@@ -1,4 +1,5 @@
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate, useNavigation } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 
 import MovieSummary from './MovieSummary';
@@ -8,11 +9,13 @@ import Button from '../UI/Button';
 import styles from './movie-form.module.css'
 
 export default function MovieForm({ rating, name, premiered, summary, image }) {
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
+  const navigation = useNavigation();
 
   const onSubmitHandler = function(e) {
     e.preventDefault();
+    setIsSubmitting(true);
   }
 
   const onCancelHandler = function() {
@@ -48,8 +51,8 @@ export default function MovieForm({ rating, name, premiered, summary, image }) {
         </div>
         <div className={styles.btns}>
           <Button onClick={onCancelHandler} type='button' text='Cancel' />
-          <Button text='Book Tickets'>
-            <BsArrowRight />
+          <Button text={!isSubmitting ? 'Book Ticket' : 'Submitting...'}>
+            {!isSubmitting && <BsArrowRight /> }
           </Button>
         </div>
       </form>
